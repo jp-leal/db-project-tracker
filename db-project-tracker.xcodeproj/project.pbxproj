@@ -16,6 +16,7 @@
 		2FAE47EA2C5559FA00E4CCD2 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE47E92C5559FA00E4CCD2 /* FontHelper.swift */; };
 		2FAE47ED2C55BD4000E4CCD2 /* StatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE47EC2C55BD4000E4CCD2 /* StatBubbleView.swift */; };
 		2FAE47EF2C55C54B00E4CCD2 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE47EE2C55C54B00E4CCD2 /* ProjectCardView.swift */; };
+		2FAE47F12C55D19800E4CCD2 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE47F02C55D19800E4CCD2 /* AddProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2FAE47E92C5559FA00E4CCD2 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 		2FAE47EC2C55BD4000E4CCD2 /* StatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatBubbleView.swift; sourceTree = "<group>"; };
 		2FAE47EE2C55C54B00E4CCD2 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
+		2FAE47F02C55D19800E4CCD2 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				2FAE47EC2C55BD4000E4CCD2 /* StatBubbleView.swift */,
 				2FAE47EE2C55C54B00E4CCD2 /* ProjectCardView.swift */,
+				2FAE47F02C55D19800E4CCD2 /* AddProjectView.swift */,
 			);
 			path = "Project Files";
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				2FAE47E72C55474C00E4CCD2 /* ProjectUpdate.swift in Sources */,
 				2FAE47EA2C5559FA00E4CCD2 /* FontHelper.swift in Sources */,
+				2FAE47F12C55D19800E4CCD2 /* AddProjectView.swift in Sources */,
 				2FAE47D82C55465400E4CCD2 /* ProjectListView.swift in Sources */,
 				2FAE47D62C55465400E4CCD2 /* db_project_trackerApp.swift in Sources */,
 				2FAE47ED2C55BD4000E4CCD2 /* StatBubbleView.swift in Sources */,

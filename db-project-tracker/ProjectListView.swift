@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProjectListView: View {
+    @State private var newProject: Project?
     var body: some View {
         ZStack{
             LinearGradient(colors: [Color("Deep Purple"), Color("Washed Blue")], startPoint: .top, endPoint: .bottom)
@@ -34,7 +35,7 @@ struct ProjectListView: View {
                 HStack{
                     
             Button{
-                //todo
+                self.newProject = Project()
             }label:{
                 ZStack{
                     Circle()
@@ -48,6 +49,9 @@ struct ProjectListView: View {
         }
             }.padding(.leading)
     }
+        .sheet(item: $newProject) { project in
+            AddProjectView(project: project)
+        }
 }
 }
 // Blue, Creme, Deep Purple, Gray, LightBlue, LightGray, Lime, Navy, Teal, Washed Blue, Yellow
