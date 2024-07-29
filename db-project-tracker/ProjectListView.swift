@@ -12,6 +12,7 @@ struct ProjectListView: View {
     @Query private var projects: [Project]
     @State private var newProject: Project?
     var body: some View {
+        NavigationStack{
         ZStack{
             LinearGradient(colors: [Color("Deep Purple"), Color("Washed Blues")], startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
@@ -23,33 +24,39 @@ struct ProjectListView: View {
                 ScrollView(showsIndicators: false){
                     VStack(alignment: .leading, spacing: 26){
                         
-                        ForEach(projects){ p in 
-                            ProjectCardView(project: p)}
+                        ForEach(projects){ p in
+                            NavigationLink{
+                                ProjectDetailView(project: p)
+                                
+                            } label: {
+                                ProjectCardView(project: p)
+                            }.buttonStyle(.plain)
+                         }
                     }
                     
                 }
-               
-        }.padding()
+                
+            }.padding()
             
             VStack{
                 Spacer()
                 HStack{
                     
-            Button{
-                self.newProject = Project()
-            }label:{
-                ZStack{
-                    Circle()
-                        .frame(width: 65)
-                        .foregroundStyle(.black)
-                    Image("cross")
-                }
-                
-            }
+                    Button{
+                        self.newProject = Project()
+                    }label:{
+                        ZStack{
+                            Circle()
+                                .frame(width: 65)
+                                .foregroundStyle(.black)
+                            Image("cross")
+                        }
+                        
+                    }
                     Spacer()
-        }
+                }
             }.padding(.leading)
-    }
+        }}
         .sheet(item: $newProject) { project in
             AddProjectView(project: project)
                 .presentationDetents([.fraction(0.2)])

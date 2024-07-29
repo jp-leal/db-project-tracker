@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F2E20FD2C56D625000FAF0A /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2E20FC2C56D625000FAF0A /* ProjectDetailView.swift */; };
 		2FAE47D62C55465400E4CCD2 /* db_project_trackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE47D52C55465400E4CCD2 /* db_project_trackerApp.swift */; };
 		2FAE47D82C55465400E4CCD2 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAE47D72C55465400E4CCD2 /* ProjectListView.swift */; };
 		2FAE47DA2C55465500E4CCD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FAE47D92C55465500E4CCD2 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F2E20FC2C56D625000FAF0A /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 		2FAE47D22C55465400E4CCD2 /* db-project-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "db-project-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAE47D52C55465400E4CCD2 /* db_project_trackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db_project_trackerApp.swift; sourceTree = "<group>"; };
 		2FAE47D72C55465400E4CCD2 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F2E20FB2C56D60E000FAF0A /* ProjectDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2F2E20FC2C56D625000FAF0A /* ProjectDetailView.swift */,
+			);
+			path = ProjectDetail;
+			sourceTree = "<group>";
+		};
 		2FAE47C92C55465400E4CCD2 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 		2FAE47D42C55465400E4CCD2 /* db-project-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				2F2E20FB2C56D60E000FAF0A /* ProjectDetail */,
 				2FAE47EB2C55BD2200E4CCD2 /* Project Files */,
 				2FAE47D52C55465400E4CCD2 /* db_project_trackerApp.swift */,
 				2FAE47D72C55465400E4CCD2 /* ProjectListView.swift */,
@@ -181,6 +192,7 @@
 			files = (
 				2FAE47E72C55474C00E4CCD2 /* ProjectUpdate.swift in Sources */,
 				2FAE47EA2C5559FA00E4CCD2 /* FontHelper.swift in Sources */,
+				2F2E20FD2C56D625000FAF0A /* ProjectDetailView.swift in Sources */,
 				2FAE47F12C55D19800E4CCD2 /* AddProjectView.swift in Sources */,
 				2FAE47D82C55465400E4CCD2 /* ProjectListView.swift in Sources */,
 				2FAE47D62C55465400E4CCD2 /* db_project_trackerApp.swift in Sources */,
